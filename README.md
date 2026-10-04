@@ -1,5 +1,16 @@
 # OpenBot + AG-UI + CrewAI + Local vLLM Demo
 
+## 目的
+
+本リポジトリは、最小 Multi-Agent デモを出発点として、**Agentic Mesh の最小 PoC** へ段階的に発展させることを目的としています。
+将来的には CrewAI 以外も含む様々な **AI Agent Runtime** を扱えるようにし、
+複数の Agent を協調・運用する **AI Agent の Fleet 構成** を目指します。
+
+> MVP の段階では単一の CrewAI Flow に限定し、Mesh / Fleet 化は MVP 完了後に段階的に進めます
+> （拡張方針は [`docs/multi_bot_architecture.md`](docs/multi_bot_architecture.md) を参照）。
+
+---
+
 **OpenBot**、**AG-UI**、**CrewAI**、ローカル **vLLM** 上の **Qwen** を組み合わせ、
 「複数の AI Agent が協調し、人間が途中で確認・承認できる」最小 Multi-Agent デモです。
 最初のユースケースは **AI 提案書レビュー・チーム** です。ユーザーが Markdown の提案書を渡すと、
