@@ -18,6 +18,7 @@ OpenBot ──AG-UI──▶ CrewAI Flow ──▶ OpenAI互換API ──▶ vLL
 | [`docs/agent_contracts.md`](docs/agent_contracts.md) | Agent 入出力・HITL・AG-UI イベント |
 | [`docs/development_workflow.md`](docs/development_workflow.md) | 実装順序・Test-First Checkpoints |
 | [`docs/multi_bot_architecture.md`](docs/multi_bot_architecture.md) | 将来の Multi-Bot 拡張（MVP 対象外） |
+| [`DESIGN.md`](DESIGN.md) | UI デザインシステム（[Google DESIGN.md 形式](https://github.com/google-labs-code/design.md)）。UI 実装時は必ずこのトークンに従う |
 
 ## 🚫 Scope (MVP)
 

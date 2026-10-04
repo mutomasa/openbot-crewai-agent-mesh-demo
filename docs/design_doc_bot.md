@@ -399,6 +399,16 @@ workflow_failed
 
 ## 10. OpenBot UI
 
+UI のビジュアルデザインは、リポジトリ直下の [`DESIGN.md`](../DESIGN.md) を正とする。
+形式は Google が提唱する [DESIGN.md](https://github.com/google-labs-code/design.md)
+（YAML front matter のデザイントークン + Markdown の設計意図）に従う。
+
+- 色・タイポグラフィ・余白・角丸・コンポーネントは `DESIGN.md` のトークンを使い、コードに直書きしない
+- デザイン変更は **`DESIGN.md` を先に更新** してから UI に反映する
+- 変更時は `npx @google/design.md lint DESIGN.md` でエラー・警告がないことを確認する
+- OpenBot のテーマ設定、または独自 UI を作る場合のスタイルの元データとして使う
+  （必要に応じて `export --format css-tailwind` 等で変換する）
+
 最低限以下を表示する。
 
 ### 入力
@@ -442,6 +452,7 @@ ai_agent/
 |
 +-- CLAUDE.md
 +-- README.md
++-- DESIGN.md
 +-- docs/
 |   +-- design_doc_bot.md
 |   +-- spec_todo.md
